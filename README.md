@@ -1,21 +1,38 @@
-# 8-Bit-CPU
-A 8 bit CPU made in logism evolution.
-Different Components used: 
+# 8-bit CPU in Logisim Evolution
 
+## Features
+- 8-bit ALU
+- Registe File
+- Program Counter
+- ROM-based Instruction Memory
+- Hardwired Control Unit
+- Custom ISA
+- LOADI
+- ADD
+- SUB
+- HALT
 
-1) 8 bit ALU : can perform operations like Addition and Subtraction , and can perform digital logic using gates like AND,OR,NOR,XOR,NOt
+## Instruction Format
+Opcode (4) | Rd (3) | Rs (3) | Immediate (6)
 
+## Opcode for different Operations:
+1. LOADI - 0000
+2. ADDITION - 0001
+3. SUBTRACTION - 0010
+4. OR OPERATION 0011
+5. AND OPERATION 0100
+6. XOR OPERATION 0101
 
-2) A Register file 
+## Components
+- ALU
+- Register File
+- Program Counter
+- ROM
+- Control Unit
+- CPU Datapath
 
-
-3) Program Counter
-
-
-4) ROM (Read only memory)
-
-
-5) Instruction Decoder which acts as a Control UNit
-
-
-6) The actual CPU
+## Sample Program
+LOADI R1,5
+LOADI R2,3
+ADD R1,R2
+HALT
